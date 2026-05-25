@@ -5,7 +5,7 @@ import { Briefcase, Zap, Code, Database } from 'lucide-react';
 export default function Experience() {
   return (
     <section id="experience" className="py-20 max-w-7xl mx-auto px-6 w-full text-white z-10 relative scroll-mt-20">
-      
+
       <div className="mb-12 text-center lg:text-left">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
           Work Experience
@@ -35,7 +35,7 @@ export default function Experience() {
           </h3>
 
           <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-            Successfully managed freelance operations, delivering custom web solutions and high-performance Telegram bots to streamline workflows for end-users. Focused on bridging the gap between robust Python-driven backends and intuitive frontend interfaces to turn ideas into scalable digital products.
+            Successfully managed freelance operations by building scalable digital products through robust Python-driven backends and complex relational database architectures. I specialize in designing sophisticated user schemas and data-handling systems, bridging the gap between powerful server-side logic and intuitive frontends. By leveraging optimized Python algorithms, I deliver secure, high-performance solutions—ranging from automated fitness platforms to high-efficiency Telegram bots.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -54,7 +54,7 @@ export default function Experience() {
         <div className="w-full lg:w-[45%] h-64 sm:h-80 lg:h-96 rounded-2xl bg-gradient-to-tr from-cyan-900/30 to-blue-900/30 border border-white/5 flex flex-col justify-center items-center p-6 text-center relative overflow-hidden group-hover:border-cyan-500/40 transition-all duration-500 group-hover:shadow-[inset_0_0_40px_rgba(34,211,238,0.1)]">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px]" />
           <Zap className="text-cyan-400/60 mb-4 animate-pulse group-hover:text-cyan-300" size={48} />
-          <h4 className="text-lg font-bold text-gray-100 z-10 drop-shadow-md group-hover:text-white">Freelance Expert</h4>
+          <h4 className="text-lg font-bold text-gray-100 z-10 drop-shadow-md group-hover:text-white">Server-Side Logic & Database Design</h4>
           <p className="text-xs text-gray-400 max-w-xs mt-1 z-10">Available for new challenges and complex development tasks.</p>
         </div>
 
