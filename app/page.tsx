@@ -5,6 +5,7 @@ import InteractiveText from '@/components/InteractiveText';
 import SkillsBento from '@/components/SkillsBento';
 import Projects from '@/components/Projects';
 import Background from '@/components/Background';
+import Experience from '@/components/Experience';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Mail, Phone, Cpu, Layers } from 'lucide-react';
 import FlipCard from '@/components/FlipCard';
@@ -127,6 +128,7 @@ export default function Home() {
       </div>
 
       <SkillsBento />
+      <Experience />
       <Projects />
 
       {/* Контакты */}
