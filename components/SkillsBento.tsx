@@ -145,7 +145,7 @@ export default function SkillsBento() {
             <div>
               <h3 className="text-2xl font-bold tracking-tight text-white">sm1le // Vladislav</h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-3xl mt-1">
-                I’m a software engineering student at KAI, but I spent most of my time diving deep into Fullstack Web development. There’s something special about writing Python backend logic and seeing it turn into a real, working feature in the browser. I don’t just write code; I want to understand why it works the way it does. I take full responsibility for what I build, and I’m always hunting for the next challenge to level up my skills.
+                I’m a software engineering student at KAI, but I spent most of my time diving deep into Fullstack Web development. There’s something special about writing Python backend logic and seeing it turn into a real, working feature in the browser. I don’t just write code, I want to understand why it works the way it does. I take full responsibility for what I build, and I’m always hunting for the next challenge to level up my skills.
               </p>
             </div>
           </div>

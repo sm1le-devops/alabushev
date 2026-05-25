@@ -6,8 +6,9 @@ import SkillsBento from '@/components/SkillsBento';
 import Projects from '@/components/Projects';
 import Background from '@/components/Background';
 import Experience from '@/components/Experience';
+import ScrollToTop from '@/components/ScrollToTop';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MapPin, Mail, Phone, Cpu, Layers } from 'lucide-react';
+import { MapPin, Mail, Phone, Cpu, Layers, Briefcase } from 'lucide-react';
 import FlipCard from '@/components/FlipCard';
 
 export default function Home() {
@@ -79,6 +80,7 @@ export default function Home() {
           >
             {[
               { name: 'Skills', href: '#skills', icon: <Cpu size={14} /> },
+              { name: 'Exp', href: '#experience', icon: <Briefcase size={14} /> },
               { name: 'Project', href: '#projects', icon: <Layers size={14} /> },
               { name: 'Contacts', href: '#contacts', icon: <Mail size={14} /> }
             ].map((item) => (
@@ -170,6 +172,7 @@ export default function Home() {
           <div className="text-gray-600 text-sm">High speed, clean code ⚡</div>
         </div>
       </footer>
+      <ScrollToTop />
     </main>
   );
 }
