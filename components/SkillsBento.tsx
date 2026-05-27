@@ -145,7 +145,7 @@ export default function SkillsBento() {
             <div>
               <h3 className="text-2xl font-bold tracking-tight text-white">sm1le // Vladislav</h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-3xl mt-1">
-                I’m a software engineering student at KAI, but I spent most of my time diving deep into Fullstack Web development. There’s something special about writing Python backend logic and seeing it turn into a real, working feature in the browser. I don’t just write code, I want to understand why it works the way it does. I take full responsibility for what I build, and I’m always hunting for the next challenge to level up my skills.
+                As a Software Engineering student at KAI, I dedicate my time to developing high-performance backend systems. My core expertise lies in Python-driven architecture and relational database design. I take full responsibility for the entire development lifecycle, from optimizing API performance to ensuring data integrity. I am driven by a passion for understanding the 'why' behind every architectural decision, and I’m focused on applying my technical skills to build secure and reliable solutions in large-scale environments.
               </p>
             </div>
           </div>
@@ -229,67 +229,42 @@ export default function SkillsBento() {
           </div>
         </div>
 
-        {/* NEW BLOCK: SOFT SKILLS */}
-        <div className="md:col-span-4 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[24px] p-5 backdrop-blur-md hover:-translate-y-2  transition-all duration-500 flex flex-col justify-between cursor-default min-h-[180px]">
-          <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+        {/* CARD: SOFT SKILLS (Подогнан под размер Languages) */}
+        <div className="md:col-span-3 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[32px] p-5 backdrop-blur-md hover:-translate-y-2 transition-all duration-500 flex flex-col justify-center cursor-default">
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-          <div className="relative z-10 flex items-center gap-3 mb-2">
+          <div className="relative z-10 flex items-center gap-3 mb-4">
             <div className="p-2 rounded-lg bg-amber-500/10 border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
               <Users size={18} className="text-amber-400 group-hover:text-amber-300" />
             </div>
             <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-amber-400 transition-colors">Soft Skills</span>
           </div>
 
-          <div className="relative z-10 flex flex-col gap-2">
+          <div className="relative z-10 flex flex-col gap-2 w-full">
             {[
-              { label: 'Teamwork', desc: 'Effective collaboration in Agile/Scrum environments' },
-              { label: 'Communication', desc: 'Clear articulation of technical ideas' },
-              { label: 'Openness', desc: 'Active contribution and networking' },
+              { label: 'Teamwork', desc: 'Agile/Scrum collaboration' },
+              { label: 'Communication', desc: 'Technical articulation' },
+              { label: 'Openness', desc: 'Networking & contribution' },
             ].map((skill) => (
-              <div key={skill.label} className="group/item flex flex-col gap-0.5 border-b border-white/5 pb-2 last:border-0 last:pb-0">
-                <span className="text-xs font-bold text-gray-200 group-hover/item:text-amber-300 transition-colors">
-                  {skill.label}
-                </span>
-                <span className="text-[10px] text-gray-500 italic">
-                  {skill.desc}
-                </span>
+              <div
+                key={skill.label}
+                className="flex items-center justify-between px-3 py-2 rounded-xl border border-white/5 bg-white/[0.02] hover:border-amber-500/30 hover:bg-amber-500/5 transition-all duration-300 cursor-default group/item"
+              >
+                <div className="flex flex-col">
+                  <span className="text-[11px] font-bold text-gray-200 group-hover/item:text-amber-300 transition-colors">
+                    {skill.label}
+                  </span>
+                  <span className="text-[9px] text-gray-500 italic group-hover/item:text-gray-400">
+                    {skill.desc}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
         </div>
 
 
-        {/* UPDATED MODERN CARD: MASON PROJECT */}
-        <a
-          href="#projects"
-          className="md:col-span-5 group relative overflow-hidden bg-black/80 border border-white/10 rounded-[24px] p-5 backdrop-blur-md hover:-translate-y-2 hover:shadow-[0_0_50px_rgba(99,102,241,0.2)] hover:border-indigo-500/30 transition-all duration-500 flex flex-col justify-between min-h-[180px]"
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-          <div className="relative z-10 flex items-center justify-between w-full">
-            <div className="flex items-center gap-2.5">
-              <div className="p-2 bg-indigo-500/10 border border-indigo-500/20 rounded-xl text-indigo-400 group-hover:bg-indigo-500/20 transition-all duration-300">
-                <Terminal size={18} />
-              </div>
-              <span className="font-mono font-black text-[9px] tracking-[0.2em] text-indigo-400 bg-indigo-500/5 border border-indigo-500/10 px-2 py-0.5 rounded-md uppercase">
-                Live Case
-              </span>
-            </div>
-
-            <div className="text-gray-500 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300">
-              <ArrowUpRight size={18} />
-            </div>
-          </div>
-
-          <div className="relative z-10 mt-4">
-            <h4 className="font-bold text-lg text-white group-hover:text-indigo-300 transition-colors duration-300">
-              Mason Project
-            </h4>
-            <p className="text-gray-400 text-xs leading-relaxed mt-1 group-hover:text-gray-300 transition-colors duration-300">
-              A website for a construction company providing a wide range of services.
-            </p>
-          </div>
-        </a>
 
       </div>
     </section>

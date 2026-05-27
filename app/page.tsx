@@ -7,6 +7,7 @@ import Projects from '@/components/Projects';
 import Background from '@/components/Background';
 import Experience from '@/components/Experience';
 import ScrollToTop from '@/components/ScrollToTop';
+import Education from '@/components/Education';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Mail, Phone, Cpu, Layers, Briefcase } from 'lucide-react';
 import FlipCard from '@/components/FlipCard';
@@ -46,7 +47,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="bg-white/[0.01] border border-white/5 p-2 rounded-2xl backdrop-blur-md shadow-2xl">
-            <InteractiveText text="Web development is my primary playground, where I bridge Python-driven backends with intuitive frontend interfaces. But I don't stop at the browser. I'm constantly exploring new architectures, eager to go beyond my current stack. From optimizing server performance and infrastructure to learning new languages, I’m always ready to expand my horizons and tackle complex challenges." />
+            <InteractiveText text="My focus is on designing data-driven backend systems. I specialize in building reliable, scalable logic using Python and architecting robust relational databases. Beyond the backend, I have a strong foundation in full-stack development, which allows me to bridge complex server-side operations with frontend interfaces. I am deeply committed to performance optimization, secure coding standards, and rigorous testing, always ensuring the integrity and efficiency of the systems I build." />
           </motion.div>
 
           {/* Кнопка */}
@@ -128,7 +129,7 @@ export default function Home() {
 
         </motion.div>
       </div>
-
+      <Education />
       <SkillsBento />
       <Experience />
       <Projects />
