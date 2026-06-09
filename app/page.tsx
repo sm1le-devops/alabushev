@@ -47,7 +47,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="bg-white/[0.01] border border-white/5 p-2 rounded-2xl backdrop-blur-md shadow-2xl">
-            <InteractiveText text="My focus is on designing data-driven backend systems. I specialize in building reliable, scalable logic using Python and architecting robust relational databases. Beyond the backend, I have a strong foundation in full-stack development, which allows me to bridge complex server-side operations with frontend interfaces. I am deeply committed to performance optimization, secure coding standards, and rigorous testing, always ensuring the integrity and efficiency of the systems I build." />
+            <InteractiveText text="Backend engineer focused on building scalable, data-driven systems with Python and robust relational database design. Prioritizing performance, reliability, and security, with working knowledge of frontend development." />
           </motion.div>
 
           {/* Кнопка */}

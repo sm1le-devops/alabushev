@@ -52,7 +52,7 @@ export default function SkillsBento() {
       icon: <svg viewBox="0 0 24 24" className="w-3.5 h-3.5"><path fill="#3776AB" d="M12 2.4c-4.9 0-5 .2-5 2.3v2h5v1H6.7c-2 0-3.3.9-3.3 2.9v2.2c0 2.2 1.1 3 3.1 3H8v-1.7c0-2 1.8-3.5 3.8-3.5h2.8V8.1c0-1.8-1.4-2.8-3.2-2.8-1.1 0-2.3-.1-2.3-.1v1.1c0 .2-.2.4-.4.4H8c-.2 0-.4-.2-.4-.4V5.1c0-.9 1-1.3 4-1.3s4.6.4 4.6 1.4v.8h1.2v-.8c0-1.9-1.2-2.8-5.4-2.8zm-1.8 1.9c-.4 0-.8.3-.8.7s.4.7.8.7.8-.3.8-.7-.4-.7-.8-.7z" /><path fill="#FFD43B" d="M12 21.6c4.9 0 5-.2 5-2.3v-2h-5v-1h5.3c2 0 3.3-.9 3.3-2.9v-2.2c0-2.2-1.1-3-3.1-3H16v1.7c0 2-1.8 3.5-3.8 3.5H9.4v2.5c0 1.8 1.4 2.8 3.2 2.8 1.1 0 2.3.1 2.3.1v-1.1c0-.2.2-.4.4-.4h.8c.2 0 .4.2.4.4v2.2c0 .9-1 1.3-4 1.3s-4.6-.4-4.6-1.4v-.8H6.7v.8c0 1.9 1.2 2.8 5.4 2.8zm1.8-1.9c.4 0 .8-.3.8-.7s-.4-.7-.8-.7-.8.3-.8.7.4.7.8.7z" /></svg>
     },
     {
-      name: 'MySQL',
+      name: 'PostgreSQL',
       color: 'text-[#F29111] border-[#F29111]/10 hover:border-[#F29111]/40 hover:bg-[#F29111]/10 hover:shadow-[0_0_15px_rgba(242,145,17,0.2)]',
       icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M12 2C6.5 2 2 4.2 2 7v10c0 2.8 4.5 5 10 5s10-2.2 10-5V7c0-2.8-4.5-5-10-5zm0 18c-4.4 0-8-1.8-8-4v-1c1.5 1.5 4.5 2.5 8 2.5s6.5-1 8-2.5v1c0 2.2-3.6 4-8 4zm8-6c-1.5 1.5-4.5 2.5-8 2.5S4 15.5 4 14V9.5C5.5 11 8.5 12 12 12s6.5-1 8-2.5V14zm0-6.5C18.5 9 15.5 10 12 10S5.5 9 4 7.5 7.6 5 12 5s8 1.5 8 2.5z" /></svg>
     },
@@ -65,6 +65,11 @@ export default function SkillsBento() {
       name: 'Git',
       color: 'text-[#F05032] border-[#F05032]/10 hover:border-[#F05032]/40 hover:bg-[#F05032]/10 hover:shadow-[0_0_15px_rgba(240,80,50,0.2)]',
       icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M23.5 11L13 .5c-.6-.6-1.5-.6-2.1 0l-1.9 1.9 2.5 2.5c.5-.2 1.2-.1 1.6.3.5.5.5 1.2.1 1.7L15 8.6c.5-.1 1.2 0 1.6.4.6.6.6 1.6 0 2.1-.6.6-1.6.6-2.1 0-.4-.4-.5-1-.3-1.5l-1.9-1.9v4.2c.2.1.4.3.5.6.6.6.6 1.6 0 2.1-.6.6-1.6.6-2.1 0-.6-.6-.6-1.6 0-2.1.2-.2.4-.4.6-.5V6.7c-.2-.1-.4-.3-.5-.6-.3-.6-.2-1.4.3-1.9.6-.6 1.6-.6 2.1 0L3.1 9.4c-.6.6-.6 1.5 0 2.1l10.5 10.5c.6.6 1.5.6 2.1 0l7.9-7.9c.5-.6.5-1.5-.1-2.1z" /></svg>
+    },
+    {
+      name: 'CI/CD',
+      color: 'text-[#2ea44f] border-[#2ea44f]/10 hover:border-[#2ea44f]/40 hover:bg-[#2ea44f]/10',
+      icon: <Zap className="w-4 h-4" />
     }
   ];
 
@@ -145,7 +150,7 @@ export default function SkillsBento() {
             <div>
               <h3 className="text-2xl font-bold tracking-tight text-white">sm1le // Vladislav</h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-3xl mt-1">
-                As a Software Engineering student at KAI, I dedicate my time to developing high-performance backend systems. My core expertise lies in Python-driven architecture and relational database design. I take full responsibility for the entire development lifecycle, from optimizing API performance to ensuring data integrity. I am driven by a passion for understanding the 'why' behind every architectural decision, and I’m focused on applying my technical skills to build secure and reliable solutions in large-scale environments.
+                Software Engineering student at KAI focused on building high-performance backend systems. Specializing in Python and relational database design, with experience across the full development lifecycle — from API optimization to data integrity and secure, scalable solutions.
               </p>
             </div>
           </div>
@@ -209,14 +214,14 @@ export default function SkillsBento() {
         </div>
 
         {/* CARD 4: BACKEND */}
-        <div className="md:col-span-4 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[24px] p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-[0_0_80px_rgba(16,185,129,0.3)] transition-all duration-500 flex flex-col justify-between cursor-default min-h-[180px]">
+        <div className="md:col-span-4 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[24px] p-6 backdrop-blur-md hover:-translate-y-2  transition-all duration-500 flex flex-col justify-between cursor-default min-h-[180px]">
           <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
           <div className="relative z-10 flex items-center gap-3">
             <div className="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/20 group-hover:bg-emerald-500/20 transition-all duration-300">
               <Database size={20} className="text-emerald-400 group-hover:text-emerald-300" />
             </div>
-            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-emerald-400 transition-colors">Backend & DevOps</span>
+            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-emerald-400 transition-colors">Backend & Infrastructure</span>
           </div>
 
           <div className="relative z-10 flex flex-wrap gap-2 mt-3">
